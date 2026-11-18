@@ -1,0 +1,43 @@
+# taskset -c 2 latsec-rs/target/release/latsec measure --profile profiles/author-n60-k192-nov2026.json --size 53 --sessions 30 --warmup 5 --keygen-reps 11 --seed 20261116-n60-k192-act53 --json results/20261116-measure-author-n60-k192-act53.json
+profile   author-n60-k192-nov2026  [Author]
+  ring    d = 512, q = 73786976294838190081 (66 bits), psi = 49540134842154596839
+  shape   p = 8, ell = 16, n = 60, k = 40, t_uf = 6, t_sig = 46, kappa = 192
+  widths  lg sigma_s = 16.4994, lg sigma_R = 16.4994, lg sigma_r = 47.6251
+  bounds  lg B1 = 54.4008, lg B2 = 63.0626, lg B_MSIS = 64.0626, omega_c = 44
+  admit   Paper { beta_lambda: 9, omega_lambda: 45 }
+  claim   As-published parameters of the November 2026 manuscript. The security levels are lattice-estimator results for the underlying MLWE/MSIS problems; the forking loss of the reduction is not charged. Running this prototype adds no security evidence.
+  [ok] T_5: Q_H / |C| <= 2^-kappa (lg |C| = 256.5)
+  [ok] challenge weight is the smallest admissible (omega_c = 44, smallest = Some(44))
+  [ok] T_1: (n+1)(Q_H+1) Q_Sign 2^(1-d) <= 2^-kappa
+  [ok] T_2: (Q_H^2 + t_uf Q_Sign Q_H) 2^(-2 kappa) <= 2^-kappa
+  [ok] Euclidean MSIS bound: B_MSIS < q (lg B_MSIS = 64.0626, lg q = 66.0000)
+  [ok] authors' rule (pinned estimator): q > 2 B_MSIS + 1 (B_MSIS / q = 0.261)
+  [ok] sigma_r > 2d q^(1/ell + 2/(d(ell-p))) (lg sigma_r = 47.6251, lg threshold = 14.1572)
+  [ok] local caps give at most Q_Sign sessions: n Q_Participate <= Q_Sign
+  [ok] note: omega_lambda < t_sig, so every admissible set has idle signers (omega_lambda = 45, t_sig = 46)
+
+key generation (trusted dealer), 60 parties: median 165.4 [164.8, 167.4] ms over 11 runs (mean 166.9 ms)
+signer sets of size 53: 30 drawn, 0 not authorized, 0 authorized but outside the bounds, 0 below t_sig
+sessions: 30 signed, 0 aborted (honest partial rejections); 5 warm-up sessions before
+reconstruction vectors: mean weight 17.40 of 53 signers (35.60 idle), mean l1 17.60, mean l2 4.17, max linf 2
+norms: max |z_i| / B1 = 0.8459, max |z| / B2 = 0.01154
+mean time: recon 0.96 ms; per signer: round 1 4.21 ms, round 2 0.005 ms, round 3 6.40 ms; partial verify 1.78 ms per call; combine 59.1 ms; verify 1.21 ms
+median time in ms [quartiles]:
+  reconstruction vector (initiator)  0.95 [0.93, 0.99]
+  round 1, per signer                4.20 [4.20, 4.21]
+  round 2, per signer                0.0052 [0.0049, 0.0056]
+  round 3, per signer                6.42 [6.16, 6.52]
+  partial verify, per call           1.80 [1.56, 1.89]
+  combine                            59.31 [58.21, 59.82]
+  verify                             1.21 [1.20, 1.23]
+  predicate P, per call              0.0021 [0.0020, 0.0022]
+  encode partial response            0.14 [0.14, 0.14]
+  decode partial response            0.14 [0.14, 0.14]
+  encode signature                   0.66 [0.66, 0.67]
+  decode signature                   0.20 [0.20, 0.21]
+  encode opening                     0.0529 [0.0528, 0.0530]
+  decode opening                     0.0508 [0.0508, 0.0509]
+encoded sizes (KiB, mean / max): vk 33.096, ak_i 33.004, ak 1980.2, sk_i 19.666 / 19.711, z_i 49.776 / 49.810, sig 51.843 / 52.309, opening 33.002, msg 198 bytes; commitment 48 bytes
+  per-signer communication (commitment + opening + response), mean: 82.825 KiB
+environment: AMD Ryzen AI 9 HX 370 w/ Radeon 890M; CPUs allowed 2; governor powersave (amd-pstate-epp, EPP balance_performance); rustc 1.100.0 (0ef1bc386 2026-11-09), release profile, opt-level 3; one thread
+wrote results/20261116-measure-author-n60-k192-act53.json

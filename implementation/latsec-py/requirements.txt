@@ -1,0 +1,2 @@
+pycryptodome>=3.19   # SHAKE256 with incremental output; Debian: python3-pycryptodome (namespace Cryptodome)
+numpy>=1.24          # only for matrix_check.py --spectral

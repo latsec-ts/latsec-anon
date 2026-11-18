@@ -1,0 +1,199 @@
+{
+  "format": "latsec-profile-v1",
+  "id": "variant-n40-k192-q62",
+  "category": "author-variant",
+  "description": "LaTSEC, n = 40, kappa = 192: the widths and bounds of the paper with a 62-bit modulus (one bit below Table 4)",
+  "provenance": [
+    "parameters: Tables 4 and 5 of the paper",
+    "optimizer inputs and exact prime: parameter-search/LaTSEC-Parameter-Selection-v2.3-fixedtailbound+privacy.ipynb",
+    "matrix: parameter-search/SEC-geometry/MatrixResult-40-19-3.ipynb (fixtures/author/G-40-19-3.json)",
+    "widths recomputed by src/params.rs (port of the notebook's optimizer)",
+    "modulus: largest prime below 2^62 that is 1 mod 1024 (Section 7.2 of the paper)"
+  ],
+  "kappa": 192,
+  "ring": {
+    "d": 512,
+    "q": "4611686018427366401",
+    "psi": "3534707954851721449"
+  },
+  "p": 8,
+  "ell": 16,
+  "sec": {
+    "n": 40,
+    "k": 20,
+    "c_exp": 3,
+    "beta_g": 1,
+    "t_uf": 5,
+    "t_sig": 26,
+    "k_c_det": 35,
+    "matrix_name": "author-40-19-3",
+    "matrix_source": {
+      "notebook": "parameter-search/SEC-geometry/MatrixResult-40-19-3.ipynb",
+      "cells": {
+        "expander": 57,
+        "g": 5,
+        "k_p": 58,
+        "supports": 7
+      },
+      "cell_sources_sha256": "8d135a50f5b1f943ee1e5d8d69e0a7523bc91633d958d4ef05bcb094d2e24d55",
+      "index_base": "supports are zero-based row indices, as in the notebook code"
+    },
+    "g": [
+      [1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, -1, 1, 0, 0, 0, 0, 0],
+      [0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 0, 1, 0, 0, 0],
+      [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1],
+      [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [1, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0],
+      [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, -1],
+      [-1, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0],
+      [1, 0, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+      [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, -1],
+      [1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1],
+      [-1, 0, 0, -1, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+      [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0],
+      [1, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      [1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1],
+      [0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+      [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0],
+      [-1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0],
+      [1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1],
+      [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0],
+      [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, -1, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, -1],
+      [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1, 0],
+      [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, -1, 0, 0, 0, 0],
+      [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, -1, 0],
+      [1, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0],
+      [1, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, -1, 0, 0, 0, 0],
+      [0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0]
+    ]
+  },
+  "budgets": {
+    "q_h": "18446744073709551616",
+    "q_sign_global": "18446744073709551616",
+    "q_participate": "461168601842738790",
+    "accounting": "global Q_Sign as in the paper; each signer enforces q_participate locally"
+  },
+  "gaussian": {
+    "convention": "sigma-exp-half",
+    "sigma_s": {
+      "num": "4240141164",
+      "frac_bits": 16
+    },
+    "sigma_big_r": {
+      "num": "4240141164",
+      "frac_bits": 16
+    },
+    "sigma_r": {
+      "num": "124809927834344",
+      "frac_bits": 0
+    },
+    "sampler": "cks-exact-v1",
+    "sampler_statistical_distance": "below exp(-2^48): exact integer arithmetic given uniform random bytes, with the support restricted to |x| < 2^126",
+    "sampler_timing": "variable-time reference; not side-channel protected"
+  },
+  "challenge": {
+    "omega_c": 44,
+    "commitment_bytes": 48
+  },
+  "encoding": {
+    "rice_share": [16, 16],
+    "rice_response": 46
+  },
+  "tails": {
+    "rule": "closed-form",
+    "kappa_big_r": 210,
+    "kappa_r": 262,
+    "theta_s": {
+      "num": "5069149586",
+      "frac_bits": 32
+    },
+    "theta_big_r": {
+      "num": "77576954381",
+      "frac_bits": 32
+    },
+    "theta_r": {
+      "num": "5199331291",
+      "frac_bits": 32
+    }
+  },
+  "admissibility": {
+    "predicate": "paper",
+    "beta_lambda": 5,
+    "omega_lambda": 25
+  },
+  "bounds": {
+    "beta_sh": "10417333",
+    "b1": "13675179981021278",
+    "b2": "1709397497627659750",
+    "b_msis_squared": "11688159219582820082516993047080250176"
+  },
+  "recon": {
+    "algorithm": "xlatsec-recon-v1",
+    "lll_delta_num": 99,
+    "lll_delta_den": 100,
+    "passes": 2,
+    "window": 2
+  },
+  "xof": "shake256-framed-v1",
+  "codec_version": 3,
+  "evidence": {
+    "claim": "Our variant of the published parameters, not a parameter set of the paper. The estimates were run with an estimator commit that accepts Euclidean SIS bounds up to q; B_MSIS is between 0.52 q and 0.91 q. The forking loss is not charged.",
+    "matrix_constants": {
+      "alpha_kp": 0.464255900330341,
+      "norm_g_hat": 4.4316793740317,
+      "norm_g": 5.86070678667877,
+      "beta_q": 20.6352940186031,
+      "beta_kp": 2.9403658464661486,
+      "gamma_kp": 0.19253138628300923,
+      "method": "float64 SVD over all subsets (MatrixResult notebooks); no error bound",
+      "certified": false
+    },
+    "recon_statistics": {
+      "observed_linf_max": 4,
+      "observed_weight_max": 24,
+      "pipeline": "the SageMath pipeline of [46] (Sage LLL, passes = window = 2)",
+      "note": "Sampled maxima over the sets tested in [46]. The enforced bounds are beta_lambda = observed + 1 and omega_lambda slightly above the observed weight. Rejection rates under this crate's reconstruction algorithm must be measured separately."
+    },
+    "estimates": [
+      {
+        "instance": "MQ",
+        "bits": 243.2,
+        "target_bits": 192.0,
+        "source": "tools/results/20261106-estimator-d857637-all-variants.json (variant bq-minus-1; lattice-estimator d857637, ADPS16, SageMath 10.9)"
+      },
+      {
+        "instance": "AK",
+        "bits": 220.8,
+        "target_bits": 198.0,
+        "source": "tools/results/20261106-estimator-d857637-all-variants.json (variant bq-minus-1; lattice-estimator d857637, ADPS16, SageMath 10.9)"
+      },
+      {
+        "instance": "MSIS",
+        "bits": 212.9,
+        "target_bits": 192.0,
+        "source": "tools/results/20261106-estimator-d857637-all-variants.json (variant bq-minus-1; lattice-estimator d857637, ADPS16, SageMath 10.9)"
+      }
+    ],
+    "notes": [
+      "Widths are the optimizer's values rounded upward to dyadic rationals; bounds are derived exactly from them and exceed the paper's real-valued bounds by a relative 2^-30 at most.",
+      "H_c is SHAKE256 feeding an unbiased sample-in-ball shuffle. Codec version 3: the signature carries the challenge ranked in b_c bits; shares, partial responses and signature responses are Golomb-Rice coded.",
+      "q_participate = floor(Q_Sign / n), so local caps imply at most Q_Sign sessions with an honest signer.",
+      "The paper's rule q > 2 B_MSIS + 1 fails by design; the Euclidean requirement B_MSIS < q holds."
+    ]
+  },
+  "digest": "fe11ca28a1a36158ee8984efc250f1689cdf3bee568ac66a20ca963900f377f6095560df96417b5cc72d4565ed94fca5b3612eb74e45176ee2ad95159a06eade"
+}

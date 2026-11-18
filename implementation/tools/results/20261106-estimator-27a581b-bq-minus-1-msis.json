@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "estimator_commit": "27a581bb8e9d49f5e9e2db315bd48ac769d5f5f5",
+    "sage": "10.9",
+    "python": "3.13.15",
+    "date": "2026-11-06",
+    "variants": [
+      "bq-minus-1"
+    ],
+    "kinds": [
+      "MSIS"
+    ],
+    "cost_model": "ADPS16",
+    "deny_list": [
+      "arora-gb",
+      "bkw"
+    ]
+  },
+  "results": [
+    {
+      "variant": "bq-minus-1",
+      "kind": "MSIS",
+      "n": 40,
+      "kappa": 128,
+      "b_q": 60,
+      "q": 1152921504606830593,
+      "target": 128,
+      "attacks": {},
+      "error": "no attack was costed: SIS trivially easy. Please set norm bound < (q-1)/2."
+    },
+    {
+      "variant": "bq-minus-1",
+      "kind": "MSIS",
+      "n": 40,
+      "kappa": 192,
+      "b_q": 62,
+      "q": 4611686018427366401,
+      "target": 192,
+      "attacks": {},
+      "error": "no attack was costed: SIS trivially easy. Please set norm bound < (q-1)/2."
+    },
+    {
+      "variant": "bq-minus-1",
+      "kind": "MSIS",
+      "n": 40,
+      "kappa": 256,
+      "b_q": 63,
+      "q": 9223372036854758401,
+      "target": 256,
+      "attacks": {},
+      "error": "no attack was costed: SIS trivially easy. Please set norm bound < (q-1)/2."
+    },
+    {
+      "variant": "bq-minus-1",
+      "kind": "MSIS",
+      "n": 60,
+      "kappa": 128,
+      "b_q": 63,
+      "q": 9223372036854758401,
+      "target": 128,
+      "attacks": {},
+      "error": "no attack was costed: SIS trivially easy. Please set norm bound < (q-1)/2."
+    },
+    {
+      "variant": "bq-minus-1",
+      "kind": "MSIS",
+      "n": 60,
+      "kappa": 192,
+      "b_q": 65,
+      "q": 36893488147419092993,
+      "target": 192,
+      "attacks": {},
+      "error": "no attack was costed: SIS trivially easy. Please set norm bound < (q-1)/2."
+    },
+    {
+      "variant": "bq-minus-1",
+      "kind": "MSIS",
+      "n": 60,
+      "kappa": 256,
+      "b_q": 65,
+      "q": 36893488147419092993,
+      "target": 256,
+      "attacks": {},
+      "error": "no attack was costed: SIS trivially easy. Please set norm bound < (q-1)/2."
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "format": "latsec-profile-v1",
+  "id": "sec-only-n40-k128-q32",
+  "category": "sec-only",
+  "description": "SEC alone, n = 40, kappa = 128, Q = 2^64, q = 2^32 - 10239: Table 7 of the SEC paper [46]",
+  "provenance": [
+    "parameters: Tables 6 and 7 of the SEC paper [46]",
+    "optimizer: the SEC parameter-selection notebook of [46] (SEC-Parameter-Selection-v1-q32.ipynb, not part of this artifact)",
+    "matrix: parameter-search/SEC-geometry/MatrixResult-40-19-3.ipynb (fixtures/author/G-40-19-3.json)",
+    "widths recomputed by src/params.rs (solve_sec_widths)"
+  ],
+  "kappa": 128,
+  "ring": {
+    "d": 512,
+    "q": "4294957057",
+    "psi": "1169692622"
+  },
+  "p": 3,
+  "ell": 6,
+  "sec": {
+    "n": 40,
+    "k": 20,
+    "c_exp": 3,
+    "beta_g": 1,
+    "t_uf": 5,
+    "t_sig": 26,
+    "k_c_det": 35,
+    "matrix_name": "author-40-19-3",
+    "matrix_source": {
+      "notebook": "parameter-search/SEC-geometry/MatrixResult-40-19-3.ipynb",
+      "cells": {
+        "expander": 57,
+        "g": 5,
+        "k_p": 58,
+        "supports": 7
+      },
+      "cell_sources_sha256": "8d135a50f5b1f943ee1e5d8d69e0a7523bc91633d958d4ef05bcb094d2e24d55",
+      "index_base": "supports are zero-based row indices, as in the notebook code"
+    },
+    "g": [
+      [1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, -1, 1, 0, 0, 0, 0, 0],
+      [0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 0, 1, 0, 0, 0],
+      [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1],
+      [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [1, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0],
+      [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, -1],
+      [-1, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0],
+      [1, 0, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+      [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, -1],
+      [1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1],
+      [-1, 0, 0, -1, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+      [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0],
+      [1, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      [1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1],
+      [0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+      [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0],
+      [-1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0],
+      [1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1],
+      [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0],
+      [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, -1, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, -1],
+      [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1, 0],
+      [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, -1, 0, 0, 0, 0],
+      [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, -1, 0],
+      [1, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0],
+      [1, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, -1, 0, 0, 0, 0],
+      [0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0]
+    ]
+  },
+  "budgets": {
+    "q_h": "1",
+    "q_sign_global": "18446744073709551616",
+    "q_participate": "461168601842738790",
+    "accounting": "Q = 2^64 leakage queries in the multi-query privacy model of [46]; there is no random oracle"
+  },
+  "gaussian": {
+    "convention": "sigma-exp-half",
+    "sigma_s": {
+      "num": "865874",
+      "frac_bits": 16
+    },
+    "sigma_big_r": {
+      "num": "2437805",
+      "frac_bits": 16
+    },
+    "sigma_r": {
+      "num": "13718858232649",
+      "frac_bits": 0
+    },
+    "sampler": "cks-exact-v1",
+    "sampler_statistical_distance": "below exp(-2^48): exact integer arithmetic given uniform random bytes, with the support restricted to |x| < 2^126",
+    "sampler_timing": "variable-time reference; not side-channel protected"
+  },
+  "challenge": {
+    "omega_c": 19,
+    "commitment_bytes": 32
+  },
+  "encoding": {
+    "rice_share": [5, 5],
+    "rice_response": 43
+  },
+  "tails": {
+    "rule": "closed-form",
+    "kappa_big_r": 144,
+    "kappa_r": 198,
+    "theta_s": {
+      "num": "5327210349",
+      "frac_bits": 32
+    },
+    "theta_big_r": {
+      "num": "64978217785",
+      "frac_bits": 32
+    },
+    "theta_r": {
+      "num": "5578803384",
+      "frac_bits": 32
+    }
+  },
+  "admissibility": {
+    "predicate": "paper",
+    "beta_lambda": 5,
+    "omega_lambda": 25
+  },
+  "bounds": {
+    "beta_sh": "2597",
+    "b1": "987665240231281",
+    "b2": "123458155028910125",
+    "b_msis_squared": "60967664172569625549898181310062576"
+  },
+  "recon": {
+    "algorithm": "xlatsec-recon-v1",
+    "lll_delta_num": 99,
+    "lll_delta_den": 100,
+    "passes": 2,
+    "window": 2
+  },
+  "xof": "shake256-framed-v1",
+  "codec_version": 3,
+  "evidence": {
+    "claim": "Privacy-only parameters of the SEC paper [46] (multi-query privacy and kernel smoothing, with kappa_MLWE = kappa + 1). No signature claim: the modulus is not sized for an MSIS bound and signing is disabled for this profile.",
+    "matrix_constants": {
+      "alpha_kp": 0.464255900330341,
+      "norm_g_hat": 4.4316793740317,
+      "norm_g": 5.86070678667877,
+      "beta_q": 20.6352940186031,
+      "beta_kp": 2.9403658464661486,
+      "gamma_kp": 0.19253138628300923,
+      "method": "float64 SVD over all subsets (MatrixResult notebooks); no error bound",
+      "certified": false
+    },
+    "recon_statistics": null,
+    "estimates": [],
+    "notes": [
+      "eps = eps' = 2^-(kappa + 3); the kernel-smoothing constraint binds and multi-query privacy is active (sigma_MQ = S_MQ).",
+      "The admissibility bounds and B2 are carried over from the LaTSEC instance for uniformity; SEC reconstruction itself only needs an authorized set of at least k_c parties."
+    ]
+  },
+  "digest": "095e043999a8ead5f339d22f60daedc3e76306301cfc7577829db9f634f1cdf9a06b81afe86ffd868a2fa53525616e444162636be1fc9f5af62dceff853c8cb5"
+}

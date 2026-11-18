@@ -1,0 +1,14 @@
+matrix author-40-19-3 (40 x 20), algorithm xlatsec-recon-v1, delta = 99/100, passes = 2, window = 2, seed "20261106"
+predicate Paper { beta_lambda: 5, omega_lambda: 25 }
+size  mode    tested  unauth  unauth%  rejected | max_inf mean_inf P[inf<=2] | min_wt mean_wt max_wt | max_l1 mean_l1 |  us/set
+  34  exact  3838380       1   0.000%         0 |       2    1.000    1.0000 |      6    7.52     24 |     24    7.52 |     683
+  35  exact   658008       0   0.000%         0 |       2    1.000    1.0000 |      6    7.44     22 |     22    7.44 |     764
+total: 4496388 sets, 4496387 authorized, 1 unauthorized, 0 authorized sets rejected by the bounds; max |lambda|_inf = 2, max weight = 24, max |lambda|_1 = 24
+wrote results/20261106-kcdet-n40.json
+matrix author-60-39-3 (60 x 40), algorithm xlatsec-recon-v1, delta = 99/100, passes = 2, window = 2, seed "20261106"
+predicate Paper { beta_lambda: 9, omega_lambda: 45 }
+size  mode    tested  unauth  unauth%  rejected | max_inf mean_inf P[inf<=2] | min_wt mean_wt max_wt | max_l1 mean_l1 |  us/set
+  55  exact  5461512       2   0.000%         0 |       2    1.026    1.0000 |     10   16.62     44 |     50   16.65 |    1994
+  56  exact   487635       0   0.000%         0 |       2    1.016    1.0000 |     10   16.12     40 |     40   16.14 |    2182
+total: 5949147 sets, 5949145 authorized, 2 unauthorized, 0 authorized sets rejected by the bounds; max |lambda|_inf = 2, max weight = 44, max |lambda|_1 = 50
+wrote results/20261106-kcdet-n60.json

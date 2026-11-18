@@ -1,0 +1,139 @@
+{
+  "format": "latsec-profile-v1",
+  "id": "functional-n20-d16",
+  "category": "functional",
+  "description": "Small functional fixture: a 20 x 10 SEC matrix of [46], ring degree 16",
+  "provenance": [
+    "matrix: MatrixResult-20-9-3.ipynb of the SEC paper [46] (not part of this artifact) (fixtures/author)",
+    "all other values chosen by hand for testing in src/builder.rs"
+  ],
+  "kappa": 128,
+  "ring": {
+    "d": 16,
+    "q": "2147483489",
+    "psi": "1550823027"
+  },
+  "p": 2,
+  "ell": 4,
+  "sec": {
+    "n": 20,
+    "k": 10,
+    "c_exp": 3,
+    "beta_g": 1,
+    "t_uf": 3,
+    "t_sig": 14,
+    "k_c_det": 16,
+    "matrix_name": "author-20-9-3",
+    "matrix_source": {
+      "notebook": "MatrixResult-20-9-3.ipynb of the SEC paper [46] (not part of this artifact)",
+      "cells": {
+        "expander": 57,
+        "g": 5,
+        "k_p": 58,
+        "supports": 7
+      },
+      "cell_sources_sha256": "68e63102375fe20cecdfff0d0224c45b8260fd7d2c268bb595a8df2cbb75faef",
+      "index_base": "supports are zero-based row indices, as in the notebook code"
+    },
+    "g": [
+      [1, 1, 0, 0, 1, 0, -1, 0, 0, 0],
+      [1, 1, 0, -1, 0, 0, -1, 0, 0, 0],
+      [1, 0, -1, -1, 0, 1, 0, 0, 0, 0],
+      [1, 0, -1, 0, 0, 0, -1, 0, 1, 0],
+      [1, 1, 0, -1, 0, 0, 0, -1, 0, 0],
+      [0, 0, 0, -1, 1, 0, 0, 0, 1, 0],
+      [1, 0, -1, -1, 0, 0, 0, 0, 1, 0],
+      [1, 1, 0, 0, 1, 0, 0, 0, 1, 0],
+      [1, 1, -1, 0, 1, 0, 0, 0, 0, 0],
+      [1, 1, 0, 0, 0, 1, 0, -1, 0, 0],
+      [0, 0, -1, 0, 0, 1, -1, 0, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, -1, 1, -1],
+      [0, 0, 0, 0, 0, 0, -1, 0, 1, -1],
+      [0, 0, 0, 0, 1, 0, -1, 0, 0, -1],
+      [0, 1, 0, 0, 1, 0, 0, -1, 0, 0],
+      [0, 1, 0, 0, 0, 0, 0, 0, 1, -1],
+      [0, 0, -1, 0, 0, 1, 0, 0, 0, -1],
+      [0, 0, 0, -1, 0, 0, -1, 0, 0, -1],
+      [-1, 1, 0, 0, 0, 1, -1, 0, 0, 0],
+      [0, 1, 0, 0, 0, 1, 0, 0, 1, 0]
+    ]
+  },
+  "budgets": {
+    "q_h": "1048576",
+    "q_sign_global": "1048576",
+    "q_participate": "52428",
+    "accounting": "functional profile; the budgets only size the tail factors"
+  },
+  "gaussian": {
+    "convention": "sigma-exp-half",
+    "sigma_s": {
+      "num": "524289",
+      "frac_bits": 16
+    },
+    "sigma_big_r": {
+      "num": "524289",
+      "frac_bits": 16
+    },
+    "sigma_r": {
+      "num": "68719476737",
+      "frac_bits": 16
+    },
+    "sampler": "cks-exact-v1",
+    "sampler_statistical_distance": "below exp(-2^48): exact integer arithmetic given uniform random bytes, with the support restricted to |x| < 2^126",
+    "sampler_timing": "variable-time reference; not side-channel protected"
+  },
+  "challenge": {
+    "omega_c": 4,
+    "commitment_bytes": 32
+  },
+  "encoding": {
+    "rice_share": [3, 3],
+    "rice_response": 19
+  },
+  "tails": {
+    "rule": "closed-form",
+    "kappa_big_r": 138,
+    "kappa_r": 153,
+    "theta_s": {
+      "num": "11446556951",
+      "frac_bits": 32
+    },
+    "theta_big_r": {
+      "num": "63700532575",
+      "frac_bits": 32
+    },
+    "theta_r": {
+      "num": "12113825155",
+      "frac_bits": 32
+    }
+  },
+  "admissibility": {
+    "predicate": "l1",
+    "l1_cap": 8
+  },
+  "bounds": {
+    "beta_sh": "527",
+    "b1": "23676664",
+    "b2": "189413312",
+    "b_msis_squared": "143509611051237392"
+  },
+  "recon": {
+    "algorithm": "xlatsec-recon-v1",
+    "lll_delta_num": 99,
+    "lll_delta_den": 100,
+    "passes": 2,
+    "window": 2
+  },
+  "xof": "shake256-framed-v1",
+  "codec_version": 3,
+  "evidence": {
+    "claim": "No security claim. Functional test profile.",
+    "matrix_constants": null,
+    "recon_statistics": null,
+    "estimates": [],
+    "notes": [
+      "The l1 cap 8 admits every set of 16 or more parties but rejects some authorized sets of 14 and 15, so both rejection paths (unauthorized, and authorized but outside the bounds) are exercised."
+    ]
+  },
+  "digest": "e0efb2ec3f8cd43c8c790a7b86889f4b4c71cdf6308016e174e41b82ecc4ee07b6a25e1fb45f0f0e7efa48ef4f90df5e54ab423fb365077f2245cfe3a8142a5c"
+}

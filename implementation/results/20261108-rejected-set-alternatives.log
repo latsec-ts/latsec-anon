@@ -1,0 +1,7 @@
+# python3 latsec-py/alternatives.py fixtures/author/G-40-19-3.json --rejected-notable --beta 5 --omega 25 (Python 3.13.13)
+set of 27 parties (zero-based): [0, 1, 2, 5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 25, 26, 28, 29, 30, 31, 32, 33, 35, 36, 38]
+Algorithm 1: linf 1, weight 26
+kernel dimension 7, radius 2: 78125 candidates, 11051 admissible
+  weight 12, linf 3: [0, 2, 0, -2, 0, -1, 0, 0, 2, 0, -2, 1, 2, 1, 1, -2, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+  weight 13, linf 4: [0, 1, 0, -3, 0, 0, 0, -2, 3, 0, 0, 1, 0, -1, 2, 0, -4, -2, 0, -1, 1, 0, 2, 0, 0, 0, 3]
+  weight 14, linf 2: [0, -1, -2, 0, 1, 0, 2, 1, -1, -2, 1, 1, 0, -1, 0, 0, 0, 0, -1, 0, 0, 1, 0, -1, 2, 0, 0]

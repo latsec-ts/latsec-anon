@@ -1,0 +1,9 @@
+# Parameter search
+
+`LaTSEC-Parameter-Selection-v2.3-fixedtailbound+privacy.ipynb` selects the LaTSEC parameter sets of Section 7 (Tables 4 and 5), estimates their concrete security, and, in the section "Key-Privacy Check", rechecks the key-privacy conditions of SEC at ε = ε′ = 2^{-(κ+3)}, including the kernel-smoothing condition.
+
+- Lattice estimator: commit `27a581b` of https://github.com/malb/lattice-estimator.
+- Modulus: for each tuple, q is the largest prime below 2^b_q with q ≡ 1 (mod 2d) and q > 2B_MSIS + 1, where b_q = ⌈lg q⌉.
+- `SEC-geometry/`: the SEC instances of Section 7, (n, k) = (40, 20) and (60, 40), in `MatrixResult-40-19-3.ipynb` and `MatrixResult-60-39-3.ipynb` (the file names give n, k − 1, and the left degree c_exp = 3). Each notebook defines its matrix G and, in the section "Further privacy analysis", computes by exhaustive enumeration ‖G‖₂, ‖Ĝ‖₂, α_{k_p}, δ_{k_p} (over all subsets of size k_p), and γ_{k_p} (over all 760,098 and 56,049,057 nonempty subsets of size at most k_p, with the deterministic peeling procedure `construct_MU`). The parameter-selection notebook takes these values as inputs, with β_Q = 1 + √(1 + δ_{k_p}²)/γ_{k_p}. The remaining sections reproduce the analyses of the underlying SEC instances (correctness bounds, empirical privacy, and reconstruction vectors).
+- `estimator-calibration/`: the CRYSTALS security-estimation scripts for Kyber and Dilithium (https://github.com/pq-crystals/security-estimates), with their output for Dilithium (`output_for_Dilithium.py`) and two small example scripts (`my_LWE_estimate.sage`, `my_SIS_estimate.sage`). Included for reference only; the LaTSEC parameters are computed with the lattice estimator above.
+- The anonymized viewer shows the LaTeX in the notebooks' text cells as source. To see it rendered, download the notebooks (or the ZIP) and open them in Jupyter or VS Code.

@@ -1,0 +1,317 @@
+{
+  "meta": {
+    "estimator_commit": "27a581bb8e9d49f5e9e2db315bd48ac769d5f5f5",
+    "sage": "10.9",
+    "python": "3.13.15",
+    "date": "2026-11-06",
+    "variants": [
+      "published"
+    ],
+    "cost_model": "ADPS16",
+    "deny_list": [
+      "arora-gb",
+      "bkw"
+    ],
+    "kinds": [
+      "MQ",
+      "AK",
+      "MSIS"
+    ]
+  },
+  "results": [
+    {
+      "variant": "published",
+      "kind": "MQ",
+      "n": 40,
+      "kappa": 128,
+      "b_q": 61,
+      "q": 2305843009213683713,
+      "target": 128,
+      "attacks": {
+        "usvp": 168.48399999999998,
+        "bdd": 169.34537498722878,
+        "bdd_hybrid": 169.34537498722878,
+        "bdd_mitm_hybrid": 401.6602620555874,
+        "dual": 170.236,
+        "dual_hybrid": 169.94400000005714
+      },
+      "sec": 168.48399999999998
+    },
+    {
+      "variant": "published",
+      "kind": "AK",
+      "n": 40,
+      "kappa": 128,
+      "b_q": 61,
+      "q": 2305843009213683713,
+      "target": 134,
+      "attacks": {
+        "usvp": 152.42399999999998,
+        "bdd": 152.7372347950528,
+        "bdd_hybrid": 152.7372347950528,
+        "bdd_mitm_hybrid": 343.7390302369325,
+        "dual": 153.59200000000004,
+        "dual_hybrid": 153.592000000015
+      },
+      "sec": 152.42399999999998
+    },
+    {
+      "variant": "published",
+      "kind": "MSIS",
+      "n": 40,
+      "kappa": 128,
+      "b_q": 61,
+      "q": 2305843009213683713,
+      "target": 128,
+      "attacks": {
+        "lattice": 153.59199999999998
+      },
+      "sec": 153.59199999999998
+    },
+    {
+      "variant": "published",
+      "kind": "MQ",
+      "n": 40,
+      "kappa": 192,
+      "b_q": 63,
+      "q": 9223372036854758401,
+      "target": 192,
+      "attacks": {
+        "usvp": 237.688,
+        "bdd": 238.0802954550986,
+        "bdd_hybrid": 238.0802954550986,
+        "bdd_mitm_hybrid": 596.7674545842157,
+        "dual": 239.73199999999997,
+        "dual_hybrid": 239.43999999999997
+      },
+      "sec": 237.688
+    },
+    {
+      "variant": "published",
+      "kind": "AK",
+      "n": 40,
+      "kappa": 192,
+      "b_q": 63,
+      "q": 9223372036854758401,
+      "target": 198,
+      "attacks": {
+        "usvp": 216.07999999999998,
+        "bdd": 216.49386898842403,
+        "bdd_hybrid": 216.49386898842403,
+        "bdd_mitm_hybrid": 532.084272445787,
+        "dual": 217.832,
+        "dual_hybrid": 217.2488655982575
+      },
+      "sec": 216.07999999999998
+    },
+    {
+      "variant": "published",
+      "kind": "MSIS",
+      "n": 40,
+      "kappa": 192,
+      "b_q": 63,
+      "q": 9223372036854758401,
+      "target": 192,
+      "attacks": {
+        "lattice": 217.54
+      },
+      "sec": 217.54
+    },
+    {
+      "variant": "published",
+      "kind": "MQ",
+      "n": 40,
+      "kappa": 256,
+      "b_q": 64,
+      "q": 18446744073709550593,
+      "target": 256,
+      "attacks": {
+        "usvp": 312.14799999999997,
+        "bdd": 312.59530743050146,
+        "bdd_hybrid": 312.59530743050146,
+        "bdd_mitm_hybrid": 838.0087264346901,
+        "dual": 314.484,
+        "dual_hybrid": 313.9007363087489
+      },
+      "sec": 312.14799999999997
+    },
+    {
+      "variant": "published",
+      "kind": "AK",
+      "n": 40,
+      "kappa": 256,
+      "b_q": 64,
+      "q": 18446744073709550593,
+      "target": 262,
+      "attacks": {
+        "usvp": 284.7,
+        "bdd": 285.56137498722876,
+        "bdd_hybrid": 285.56137498722876,
+        "bdd_mitm_hybrid": 754.7088332517204,
+        "dual": 287.036,
+        "dual_hybrid": 286.16000005313833
+      },
+      "sec": 284.7
+    },
+    {
+      "variant": "published",
+      "kind": "MSIS",
+      "n": 40,
+      "kappa": 256,
+      "b_q": 64,
+      "q": 18446744073709550593,
+      "target": 256,
+      "attacks": {
+        "lattice": 289.08
+      },
+      "sec": 289.08
+    },
+    {
+      "variant": "published",
+      "kind": "MQ",
+      "n": 60,
+      "kappa": 128,
+      "b_q": 64,
+      "q": 18446744073709550593,
+      "target": 128,
+      "attacks": {
+        "usvp": 163.51999999999998,
+        "bdd": 163.9122954550986,
+        "bdd_hybrid": 163.9122954550986,
+        "bdd_mitm_hybrid": 377.3545205566431,
+        "dual": 164.98,
+        "dual_hybrid": 164.68800000184385
+      },
+      "sec": 163.51999999999998
+    },
+    {
+      "variant": "published",
+      "kind": "AK",
+      "n": 60,
+      "kappa": 128,
+      "b_q": 64,
+      "q": 18446744073709550593,
+      "target": 135,
+      "attacks": {
+        "usvp": 142.20399999999998,
+        "bdd": 143.20399999999998,
+        "bdd_hybrid": 143.20399999999998,
+        "bdd_mitm_hybrid": 327.9725983138825,
+        "dual": 143.66400000000002,
+        "dual_hybrid": 143.37200000055128
+      },
+      "sec": 142.20399999999998
+    },
+    {
+      "variant": "published",
+      "kind": "MSIS",
+      "n": 60,
+      "kappa": 128,
+      "b_q": 64,
+      "q": 18446744073709550593,
+      "target": 128,
+      "attacks": {
+        "lattice": 146.584
+      },
+      "sec": 146.584
+    },
+    {
+      "variant": "published",
+      "kind": "MQ",
+      "n": 60,
+      "kappa": 192,
+      "b_q": 66,
+      "q": 73786976294838190081,
+      "target": 192,
+      "attacks": {
+        "usvp": 230.97199999999998,
+        "bdd": 231.34705602497644,
+        "bdd_hybrid": 231.34705602497644,
+        "bdd_mitm_hybrid": 582.0226507270606,
+        "dual": 232.724,
+        "dual_hybrid": 232.43200000000002
+      },
+      "sec": 230.97199999999998
+    },
+    {
+      "variant": "published",
+      "kind": "AK",
+      "n": 60,
+      "kappa": 192,
+      "b_q": 66,
+      "q": 73786976294838190081,
+      "target": 199,
+      "attacks": {
+        "usvp": 202.648,
+        "bdd": 203.1563222544197,
+        "bdd_hybrid": 203.1563222544197,
+        "bdd_mitm_hybrid": 494.9614258230261,
+        "dual": 204.39999999999998,
+        "dual_hybrid": 203.82760000042273
+      },
+      "sec": 202.648
+    },
+    {
+      "variant": "published",
+      "kind": "MSIS",
+      "n": 60,
+      "kappa": 192,
+      "b_q": 66,
+      "q": 73786976294838190081,
+      "target": 192,
+      "attacks": {
+        "lattice": 207.904
+      },
+      "sec": 207.904
+    },
+    {
+      "variant": "published",
+      "kind": "MQ",
+      "n": 60,
+      "kappa": 256,
+      "b_q": 66,
+      "q": 73786976294838190081,
+      "target": 256,
+      "attacks": {
+        "usvp": 310.39599999999996,
+        "bdd": 310.7092347950528,
+        "bdd_hybrid": 310.7092347950528,
+        "bdd_mitm_hybrid": 829.8721374559638,
+        "dual": 312.73199999999997,
+        "dual_hybrid": 312.42024868417707
+      },
+      "sec": 310.39599999999996
+    },
+    {
+      "variant": "published",
+      "kind": "AK",
+      "n": 60,
+      "kappa": 256,
+      "b_q": 66,
+      "q": 73786976294838190081,
+      "target": 263,
+      "attacks": {
+        "usvp": 273.31199999999995,
+        "bdd": 273.725868988424,
+        "bdd_hybrid": 273.725868988424,
+        "bdd_mitm_hybrid": 708.1863243108453,
+        "dual": 275.356,
+        "dual_hybrid": 274.77200003120765
+      },
+      "sec": 273.31199999999995
+    },
+    {
+      "variant": "published",
+      "kind": "MSIS",
+      "n": 60,
+      "kappa": 256,
+      "b_q": 66,
+      "q": 73786976294838190081,
+      "target": 256,
+      "attacks": {
+        "lattice": 271.56
+      },
+      "sec": 271.56
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+# python3 tools/rice_parameters.py (Python 3.13.13), 2026-11-08
+1. Where k and k + 1 give equal expected length, in units of 2^k:
+   k =  0: sigma = 1.923891 * 2^k
+   k =  1: sigma = 2.259317 * 2^k
+   k =  2: sigma = 2.418125 * 2^k
+   k =  3: sigma = 2.495857 * 2^k
+   k =  4: sigma = 2.534352 * 2^k
+   k =  6: sigma = 2.563070 * 2^k
+   k =  8: sigma = 2.570230 * 2^k
+   k = 12: sigma = 2.572466 * 2^k
+   k = 16: sigma = 2.572605 * 2^k
+   k = 24: sigma = 2.572615 * 2^k
+   k = 32: sigma = 2.572615 * 2^k
+   k = 45: sigma = 2.572615 * 2^k
+   the rule switches at 2.5726 * 2^k
+2. Octave by octave: the optimal switch point, the rule's, and the loss at the rule's:
+   k =  0 ->  1: optimal 1.923891 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.2633 bits
+   k =  1 ->  2: optimal 2.259317 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.1283 bits
+   k =  2 ->  3: optimal 2.418125 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0633 bits
+   k =  3 ->  4: optimal 2.495857 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0315 bits
+   k =  4 ->  5: optimal 2.534352 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0157 bits
+   k =  5 ->  6: optimal 2.553512 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0078 bits
+   k =  6 ->  7: optimal 2.563070 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0039 bits
+   k =  7 ->  8: optimal 2.567844 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0019 bits
+   k =  8 ->  9: optimal 2.570230 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0010 bits
+   k =  9 -> 10: optimal 2.571422 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0005 bits
+   k = 10 -> 11: optimal 2.572018 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0002 bits
+   k = 11 -> 12: optimal 2.572317 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0001 bits
+   k = 12 -> 13: optimal 2.572466 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0001 bits
+   k = 13 -> 14: optimal 2.572540 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0000 bits
+   k = 14 -> 15: optimal 2.572577 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0000 bits
+   k = 15 -> 16: optimal 2.572596 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0000 bits
+   k = 16 -> 17: optimal 2.572605 * 2^k, rule 2.572600 * 2^k, loss at the rule's switch 0.0000 bits
+   for sigma >= 8 (k >= 2) the rule loses at most 0.064 bits per coefficient
+3. Excess of the rule's expected length over the entropy:
+   sigma >= 8: largest excess 0.2367 bits per coefficient (at sigma = 10.29)
+   sigma >= 2^15 (the share and response widths of the author profiles): largest excess 0.1682 bits per coefficient
+   summation vs tail model at sigma = 2^12: 1.81e-09 bits
+4. Stored profiles: does the stored parameter minimize the modelled length, and how far
+   (in lg sigma) is each width from the nearest optimal switch point?
+   ok   author-n40-k128-nov2026: widths 2^16.26, 2^16.46, 2^45.01; stored k [15, 16, 44], modelled optimum [15, 16, 44]; margins 0.11, 0.10, 0.35
+   ok   author-n40-k192-nov2026: widths 2^16.77, 2^16.98, 2^46.83; stored k [16, 16, 46], modelled optimum [16, 16, 46]; margins 0.41, 0.38, 0.46
+   ok   author-n40-k256-nov2026: widths 2^16.91, 2^17.11, 2^47.47; stored k [16, 16, 47], modelled optimum [16, 16, 47]; margins 0.46, 0.25, 0.10
+   ok   author-n60-k128-nov2026: widths 2^16.78, 2^16.98, 2^45.81; stored k [16, 16, 45], modelled optimum [16, 16, 45]; margins 0.41, 0.38, 0.45
+   ok   author-n60-k192-nov2026: widths 2^17.29, 2^17.50, 2^47.63; stored k [16, 17, 47], modelled optimum [16, 17, 47]; margins 0.07, 0.14, 0.26
+   ok   author-n60-k256-nov2026: widths 2^17.42, 2^17.63, 2^48.26; stored k [17, 17, 47], modelled optimum [17, 17, 47]; margins 0.06, 0.27, 0.10
+   ok   functional-n10-d16: widths 2^3.79, 2^4.00, 2^20.00; stored k [3, 3, 19], modelled optimum [3, 3, 19]; margins 0.52, 0.32, 0.36
+   ok   functional-n20-d16: widths 2^3.79, 2^4.00, 2^20.00; stored k [3, 3, 19], modelled optimum [3, 3, 19]; margins 0.52, 0.32, 0.36
+   ok   functional-n20-d512: widths 2^16.28, 2^16.49, 2^56.00; stored k [15, 16, 55], modelled optimum [15, 16, 55]; margins 0.08, 0.13, 0.36
+   ok   sec-only-n40-k128-q32: widths 2^6.01, 2^6.04, 2^43.64; stored k [5, 5, 43], modelled optimum [5, 5, 43]; margins 0.34, 0.31, 0.28
+   ok   sec-only-n60-k128-q32: widths 2^6.50, 2^6.50, 2^43.93; stored k [6, 6, 43], modelled optimum [6, 6, 43]; margins 0.15, 0.15, 0.43
+   ok   variant-n40-k128-q60: widths 2^16.26, 2^16.46, 2^45.01; stored k [15, 16, 44], modelled optimum [15, 16, 44]; margins 0.11, 0.10, 0.35
+   ok   variant-n40-k192-q62: widths 2^16.77, 2^16.98, 2^46.83; stored k [16, 16, 46], modelled optimum [16, 16, 46]; margins 0.41, 0.38, 0.46
+   ok   variant-n40-k256-q63: widths 2^16.91, 2^17.11, 2^47.47; stored k [16, 16, 47], modelled optimum [16, 16, 47]; margins 0.46, 0.25, 0.10
+   ok   variant-n60-k128-q63: widths 2^16.78, 2^16.98, 2^45.81; stored k [16, 16, 45], modelled optimum [16, 16, 45]; margins 0.41, 0.38, 0.45
+   ok   variant-n60-k192-q65: widths 2^17.29, 2^17.50, 2^47.63; stored k [16, 17, 47], modelled optimum [16, 17, 47]; margins 0.07, 0.14, 0.26
+   ok   variant-n60-k256-q65: widths 2^17.42, 2^17.63, 2^48.26; stored k [17, 17, 47], modelled optimum [17, 17, 47]; margins 0.06, 0.27, 0.10
+   the closest width is 0.061 in lg sigma (4.3%) from a switch point

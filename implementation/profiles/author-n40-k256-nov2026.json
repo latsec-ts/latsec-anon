@@ -1,0 +1,197 @@
+{
+  "format": "latsec-profile-v1",
+  "id": "author-n40-k256-nov2026",
+  "category": "author",
+  "description": "LaTSEC, n = 40, kappa = 256: Table 4 of the paper on its SEC matrix",
+  "provenance": [
+    "parameters: Tables 4 and 5 of the paper",
+    "optimizer inputs and exact prime: parameter-search/LaTSEC-Parameter-Selection-v2.3-fixedtailbound+privacy.ipynb",
+    "matrix: parameter-search/SEC-geometry/MatrixResult-40-19-3.ipynb (fixtures/author/G-40-19-3.json)",
+    "widths recomputed by src/params.rs (port of the notebook's optimizer)"
+  ],
+  "kappa": 256,
+  "ring": {
+    "d": 512,
+    "q": "18446744073709550593",
+    "psi": "3632633069964680952"
+  },
+  "p": 10,
+  "ell": 20,
+  "sec": {
+    "n": 40,
+    "k": 20,
+    "c_exp": 3,
+    "beta_g": 1,
+    "t_uf": 5,
+    "t_sig": 26,
+    "k_c_det": 35,
+    "matrix_name": "author-40-19-3",
+    "matrix_source": {
+      "notebook": "parameter-search/SEC-geometry/MatrixResult-40-19-3.ipynb",
+      "cells": {
+        "expander": 57,
+        "g": 5,
+        "k_p": 58,
+        "supports": 7
+      },
+      "cell_sources_sha256": "8d135a50f5b1f943ee1e5d8d69e0a7523bc91633d958d4ef05bcb094d2e24d55",
+      "index_base": "supports are zero-based row indices, as in the notebook code"
+    },
+    "g": [
+      [1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, -1, 1, 0, 0, 0, 0, 0],
+      [0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 0, 1, 0, 0, 0],
+      [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1],
+      [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [1, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0],
+      [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, -1],
+      [-1, -1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0],
+      [1, 0, 1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+      [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, -1],
+      [1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1],
+      [-1, 0, 0, -1, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+      [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0],
+      [1, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      [1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1],
+      [0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+      [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0],
+      [-1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0],
+      [1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1],
+      [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0],
+      [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0],
+      [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0, -1, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, -1],
+      [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+      [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1, 0],
+      [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, -1, 0, 0, 0, 0],
+      [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, -1, 0],
+      [1, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0],
+      [1, -1, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, -1, 0, 0, 0, 0],
+      [0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0]
+    ]
+  },
+  "budgets": {
+    "q_h": "18446744073709551616",
+    "q_sign_global": "18446744073709551616",
+    "q_participate": "461168601842738790",
+    "accounting": "global Q_Sign as in the paper; each signer enforces q_participate locally"
+  },
+  "gaussian": {
+    "convention": "sigma-exp-half",
+    "sigma_s": {
+      "num": "4649918570",
+      "frac_bits": 16
+    },
+    "sigma_big_r": {
+      "num": "4649918570",
+      "frac_bits": 16
+    },
+    "sigma_r": {
+      "num": "194272286242863",
+      "frac_bits": 0
+    },
+    "sampler": "cks-exact-v1",
+    "sampler_statistical_distance": "below exp(-2^48): exact integer arithmetic given uniform random bytes, with the support restricted to |x| < 2^126",
+    "sampler_timing": "variable-time reference; not side-channel protected"
+  },
+  "challenge": {
+    "omega_c": 60,
+    "commitment_bytes": 64
+  },
+  "encoding": {
+    "rice_share": [16, 16],
+    "rice_response": 47
+  },
+  "tails": {
+    "rule": "closed-form",
+    "kappa_big_r": 274,
+    "kappa_r": 326,
+    "theta_s": {
+      "num": "5094539327",
+      "frac_bits": 32
+    },
+    "theta_big_r": {
+      "num": "88002178083",
+      "frac_bits": 32
+    },
+    "theta_r": {
+      "num": "5197257852",
+      "frac_bits": 32
+    }
+  },
+  "admissibility": {
+    "predicate": "paper",
+    "beta_lambda": 5,
+    "omega_lambda": 25
+  },
+  "bounds": {
+    "beta_sh": "12877830",
+    "b1": "23789025926296667",
+    "b2": "2973628240787083375",
+    "b_msis_squared": "35369859657625937211554080956805562740"
+  },
+  "recon": {
+    "algorithm": "xlatsec-recon-v1",
+    "lll_delta_num": 99,
+    "lll_delta_den": 100,
+    "passes": 2,
+    "window": 2
+  },
+  "xof": "shake256-framed-v1",
+  "codec_version": 3,
+  "evidence": {
+    "claim": "As-published parameters of the paper. The security levels are lattice-estimator results for the underlying MLWE/MSIS problems; the forking loss of the reduction is not charged. Running this prototype adds no security evidence.",
+    "matrix_constants": {
+      "alpha_kp": 0.464255900330341,
+      "norm_g_hat": 4.4316793740317,
+      "norm_g": 5.86070678667877,
+      "beta_q": 20.6352940186031,
+      "beta_kp": 2.9403658464661486,
+      "gamma_kp": 0.19253138628300923,
+      "method": "float64 SVD over all subsets (MatrixResult notebooks); no error bound",
+      "certified": false
+    },
+    "recon_statistics": {
+      "observed_linf_max": 4,
+      "observed_weight_max": 24,
+      "pipeline": "the SageMath pipeline of [46] (Sage LLL, passes = window = 2)",
+      "note": "Sampled maxima over the sets tested in [46]. The enforced bounds are beta_lambda = observed + 1 and omega_lambda slightly above the observed weight. Rejection rates under this crate's reconstruction algorithm must be measured separately."
+    },
+    "estimates": [
+      {
+        "instance": "MQ",
+        "bits": 312.1,
+        "target_bits": 256.0,
+        "source": "the parameter-selection notebook (lattice-estimator 27a581b, ADPS16, SageMath 10.7); reproduced with tools/latsec_estimates.py, see tools/results"
+      },
+      {
+        "instance": "AK",
+        "bits": 284.7,
+        "target_bits": 262.0,
+        "source": "the parameter-selection notebook (lattice-estimator 27a581b, ADPS16, SageMath 10.7); reproduced with tools/latsec_estimates.py, see tools/results"
+      },
+      {
+        "instance": "MSIS",
+        "bits": 289.1,
+        "target_bits": 256.0,
+        "source": "the parameter-selection notebook (lattice-estimator 27a581b, ADPS16, SageMath 10.7); reproduced with tools/latsec_estimates.py, see tools/results"
+      }
+    ],
+    "notes": [
+      "Widths are the optimizer's values rounded upward to dyadic rationals; bounds are derived exactly from them and exceed the paper's real-valued bounds by a relative 2^-30 at most.",
+      "H_c is SHAKE256 feeding an unbiased sample-in-ball shuffle. Codec version 3: the signature carries the challenge ranked in b_c bits; shares, partial responses and signature responses are Golomb-Rice coded.",
+      "q_participate = floor(Q_Sign / n), so local caps imply at most Q_Sign sessions with an honest signer."
+    ]
+  },
+  "digest": "178271400668eea06b12ebfc034780f9b71e38ad10f780908b52e9dc108ea1ccbb6f4d7a0730cbd352ca32a0372206b56d305f44e703bcf6d95b5c5398a9cc2c"
+}

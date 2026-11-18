@@ -1,0 +1,33 @@
+# Rust (latsec-rs): build output and rustfmt backups. Keep Cargo.lock versioned.
+target/
+*.rs.bk
+
+# Python (latsec-py, tools): bytecode, profiles, virtual environments, packaging,
+# and tool caches.
+__pycache__/
+*.py[cod]
+*.prof
+*.egg-info/
+.venv/
+venv/
+env/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# SageMath local state and generated preparser output. Keep .sage sources.
+.sage/
+*.sage.py
+
+# Jupyter notebook checkpoints. Keep notebooks and saved research artifacts.
+.ipynb_checkpoints/
+
+# Recorded outputs are versioned.  The negations matter where this directory is
+# part of a repository whose own .gitignore excludes logs.
+!results/*.log
+!tools/results/*

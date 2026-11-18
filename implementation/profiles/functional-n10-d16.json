@@ -1,0 +1,129 @@
+{
+  "format": "latsec-profile-v1",
+  "id": "functional-n10-d16",
+  "category": "functional",
+  "description": "Small functional fixture: a 10 x 6 SEC matrix of [46], ring degree 16",
+  "provenance": [
+    "matrix: MatrixResult-10-5-3.ipynb of the SEC paper [46] (not part of this artifact) (fixtures/author)",
+    "all other values chosen by hand for testing in src/builder.rs"
+  ],
+  "kappa": 128,
+  "ring": {
+    "d": 16,
+    "q": "1073741441",
+    "psi": "915968037"
+  },
+  "p": 2,
+  "ell": 4,
+  "sec": {
+    "n": 10,
+    "k": 6,
+    "c_exp": 3,
+    "beta_g": 1,
+    "t_uf": 2,
+    "t_sig": 7,
+    "k_c_det": 9,
+    "matrix_name": "author-10-5-3",
+    "matrix_source": {
+      "notebook": "MatrixResult-10-5-3.ipynb of the SEC paper [46] (not part of this artifact)",
+      "cells": {
+        "expander": 57,
+        "g": 5,
+        "k_p": 58,
+        "supports": 7
+      },
+      "cell_sources_sha256": "48690e5f74bc9ba986f12cf22c730e7a1b7665f36ec75fb305be33e3a69a284a",
+      "index_base": "supports are zero-based row indices, as in the notebook code"
+    },
+    "g": [
+      [1, 0, -1, 1, 1, 0],
+      [1, -1, 0, 1, 1, 0],
+      [1, 0, 0, 1, 1, 1],
+      [-1, -1, -1, 0, 1, 0],
+      [0, 0, -1, 0, 1, 1],
+      [1, -1, 0, 0, 1, 1],
+      [-1, -1, -1, 1, 0, 0],
+      [1, 0, -1, 1, 0, 1],
+      [1, -1, 0, 1, 0, 1],
+      [0, -1, -1, 0, 0, 1]
+    ]
+  },
+  "budgets": {
+    "q_h": "1048576",
+    "q_sign_global": "1048576",
+    "q_participate": "104857",
+    "accounting": "functional profile; the budgets only size the tail factors"
+  },
+  "gaussian": {
+    "convention": "sigma-exp-half",
+    "sigma_s": {
+      "num": "524289",
+      "frac_bits": 16
+    },
+    "sigma_big_r": {
+      "num": "524289",
+      "frac_bits": 16
+    },
+    "sigma_r": {
+      "num": "68719476737",
+      "frac_bits": 16
+    },
+    "sampler": "cks-exact-v1",
+    "sampler_statistical_distance": "below exp(-2^48): exact integer arithmetic given uniform random bytes, with the support restricted to |x| < 2^126",
+    "sampler_timing": "variable-time reference; not side-channel protected"
+  },
+  "challenge": {
+    "omega_c": 4,
+    "commitment_bytes": 32
+  },
+  "encoding": {
+    "rice_share": [3, 3],
+    "rice_response": 19
+  },
+  "tails": {
+    "rule": "closed-form",
+    "kappa_big_r": 137,
+    "kappa_r": 152,
+    "theta_s": {
+      "num": "11446556951",
+      "frac_bits": 32
+    },
+    "theta_big_r": {
+      "num": "63484903678",
+      "frac_bits": 32
+    },
+    "theta_r": {
+      "num": "12088231443",
+      "frac_bits": 32
+    }
+  },
+  "admissibility": {
+    "predicate": "l1",
+    "l1_cap": 4
+  },
+  "bounds": {
+    "beta_sh": "526",
+    "b1": "23626638",
+    "b2": "94506552",
+    "b_msis_squared": "35725953483714832"
+  },
+  "recon": {
+    "algorithm": "xlatsec-recon-v1",
+    "lll_delta_num": 99,
+    "lll_delta_den": 100,
+    "passes": 2,
+    "window": 2
+  },
+  "xof": "shake256-framed-v1",
+  "codec_version": 3,
+  "evidence": {
+    "claim": "No security claim. Functional test profile.",
+    "matrix_constants": null,
+    "recon_statistics": null,
+    "estimates": [],
+    "notes": [
+      "t_sig = 7 is below the size (9) from which every set is authorized, so some sets of size 7 and 8 are rejected as unauthorized. Every authorized set of size >= 7 meets the l1 cap."
+    ]
+  },
+  "digest": "486ca4559088e867b20fc25b6c6a7b9bac9b10cf8b2c721074f8c2cdbfeab102d5e35255ed66f9103defe49bf5b63ece9e7449ff7cbbe8e60df586499a76f981"
+}

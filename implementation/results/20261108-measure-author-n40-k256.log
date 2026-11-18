@@ -1,0 +1,26 @@
+profile   author-n40-k256-nov2026  [Author]
+  ring    d = 512, q = 18446744073709550593 (64 bits), psi = 3632633069964680952
+  shape   p = 10, ell = 20, n = 40, k = 20, t_uf = 5, t_sig = 26, kappa = 256
+  widths  lg sigma_s = 16.1146, lg sigma_R = 16.1146, lg sigma_r = 47.4651
+  bounds  lg B1 = 54.4011, lg B2 = 61.3669, lg B_MSIS = 62.3669, omega_c = 60
+  admit   Paper { beta_lambda: 5, omega_lambda: 25 }
+  claim   As-published parameters of the November 2026 manuscript. The security levels are lattice-estimator results for the underlying MLWE/MSIS problems; the forking loss of the reduction is not charged. Running this prototype adds no security evidence.
+  [ok] T_5: Q_H / |C| <= 2^-kappa (lg |C| = 322.7)
+  [ok] challenge weight is the smallest admissible (omega_c = 60, smallest = Some(60))
+  [ok] T_1: (n+1)(Q_H+1) Q_Sign 2^(1-d) <= 2^-kappa
+  [ok] T_2: (Q_H^2 + t_uf Q_Sign Q_H) 2^(-2 kappa) <= 2^-kappa
+  [ok] Euclidean MSIS bound: B_MSIS < q (lg B_MSIS = 62.3669, lg q = 64.0000)
+  [ok] authors' rule (pinned estimator): q > 2 B_MSIS + 1 (B_MSIS / q = 0.322)
+  [ok] sigma_r > 2d q^(1/ell + 2/(d(ell-p))) (lg sigma_r = 47.4651, lg threshold = 13.2250)
+  [ok] local caps give at most Q_Sign sessions: n Q_Participate <= Q_Sign
+  [ok] note: omega_lambda < t_sig, so every admissible set has idle signers (omega_lambda = 25, t_sig = 26)
+
+key generation (trusted dealer): 258.5 ms for 40 parties
+signer sets of size 26: 101 drawn, 1 not authorized, 0 authorized but outside the bounds, 0 below t_sig
+sessions: 100 signed, 0 aborted (honest partial rejections)
+reconstruction vectors: mean weight 10.30 of 26 signers (15.70 idle), mean l1 10.72, mean l2 3.33, max linf 2
+norms: max |z_i| / B1 = 0.8465, max |z| / B2 = 0.04091
+mean time: recon 0.27 ms; per signer: round 1 10.28 ms, round 2 0.009 ms, round 3 8.85 ms; partial verify 4.81 ms per call; combine 99.3 ms; verify 4.05 ms
+encoded sizes (KiB, mean / max): vk 40.096, ak_i 40.004, ak 1600.2, sk_i 23.961 / 24.103, z_i 62.065 / 62.098, sig 64.203 / 65.340, opening 40.002, msg 123 bytes; commitment 64 bytes
+  per-signer communication (commitment + opening + response), mean: 102.130 KiB
+wrote results/20261108-measure-author-n40-k256.json

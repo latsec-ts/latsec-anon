@@ -1,0 +1,139 @@
+{
+  "format": "latsec-profile-v1",
+  "id": "functional-n20-d512",
+  "category": "functional",
+  "description": "Full-degree functional fixture: a 20 x 10 SEC matrix of [46], d = 512, 66-bit prime, wide masks",
+  "provenance": [
+    "matrix: MatrixResult-20-9-3.ipynb of the SEC paper [46] (not part of this artifact) (fixtures/author)",
+    "all other values chosen by hand for testing in src/builder.rs"
+  ],
+  "kappa": 128,
+  "ring": {
+    "d": 512,
+    "q": "73786976294838190081",
+    "psi": "49540134842154596839"
+  },
+  "p": 2,
+  "ell": 4,
+  "sec": {
+    "n": 20,
+    "k": 10,
+    "c_exp": 3,
+    "beta_g": 1,
+    "t_uf": 3,
+    "t_sig": 14,
+    "k_c_det": 16,
+    "matrix_name": "author-20-9-3",
+    "matrix_source": {
+      "notebook": "MatrixResult-20-9-3.ipynb of the SEC paper [46] (not part of this artifact)",
+      "cells": {
+        "expander": 57,
+        "g": 5,
+        "k_p": 58,
+        "supports": 7
+      },
+      "cell_sources_sha256": "68e63102375fe20cecdfff0d0224c45b8260fd7d2c268bb595a8df2cbb75faef",
+      "index_base": "supports are zero-based row indices, as in the notebook code"
+    },
+    "g": [
+      [1, 1, 0, 0, 1, 0, -1, 0, 0, 0],
+      [1, 1, 0, -1, 0, 0, -1, 0, 0, 0],
+      [1, 0, -1, -1, 0, 1, 0, 0, 0, 0],
+      [1, 0, -1, 0, 0, 0, -1, 0, 1, 0],
+      [1, 1, 0, -1, 0, 0, 0, -1, 0, 0],
+      [0, 0, 0, -1, 1, 0, 0, 0, 1, 0],
+      [1, 0, -1, -1, 0, 0, 0, 0, 1, 0],
+      [1, 1, 0, 0, 1, 0, 0, 0, 1, 0],
+      [1, 1, -1, 0, 1, 0, 0, 0, 0, 0],
+      [1, 1, 0, 0, 0, 1, 0, -1, 0, 0],
+      [0, 0, -1, 0, 0, 1, -1, 0, 0, 0],
+      [1, 0, 0, 0, 0, 0, 0, -1, 1, -1],
+      [0, 0, 0, 0, 0, 0, -1, 0, 1, -1],
+      [0, 0, 0, 0, 1, 0, -1, 0, 0, -1],
+      [0, 1, 0, 0, 1, 0, 0, -1, 0, 0],
+      [0, 1, 0, 0, 0, 0, 0, 0, 1, -1],
+      [0, 0, -1, 0, 0, 1, 0, 0, 0, -1],
+      [0, 0, 0, -1, 0, 0, -1, 0, 0, -1],
+      [-1, 1, 0, 0, 0, 1, -1, 0, 0, 0],
+      [0, 1, 0, 0, 0, 1, 0, 0, 1, 0]
+    ]
+  },
+  "budgets": {
+    "q_h": "9223372036854775808",
+    "q_sign_global": "4611686018427387904",
+    "q_participate": "230584300921369395",
+    "accounting": "functional profile; the budgets only size the tail factors"
+  },
+  "gaussian": {
+    "convention": "sigma-exp-half",
+    "sigma_s": {
+      "num": "3014656001",
+      "frac_bits": 16
+    },
+    "sigma_big_r": {
+      "num": "3014656001",
+      "frac_bits": 16
+    },
+    "sigma_r": {
+      "num": "72057594037993472",
+      "frac_bits": 0
+    },
+    "sampler": "cks-exact-v1",
+    "sampler_statistical_distance": "below exp(-2^48): exact integer arithmetic given uniform random bytes, with the support restricted to |x| < 2^126",
+    "sampler_timing": "variable-time reference; not side-channel protected"
+  },
+  "challenge": {
+    "omega_c": 30,
+    "commitment_bytes": 32
+  },
+  "encoding": {
+    "rice_share": [15, 16],
+    "rice_response": 55
+  },
+  "tails": {
+    "rule": "closed-form",
+    "kappa_big_r": 143,
+    "kappa_r": 195,
+    "theta_s": {
+      "num": "5559201682",
+      "frac_bits": 32
+    },
+    "theta_big_r": {
+      "num": "64767144970",
+      "frac_bits": 32
+    },
+    "theta_r": {
+      "num": "5855381588",
+      "frac_bits": 32
+    }
+  },
+  "admissibility": {
+    "predicate": "l1",
+    "l1_cap": 8
+  },
+  "bounds": {
+    "beta_sh": "4775492",
+    "b1": "4445699209076291718",
+    "b2": "35565593672610333744",
+    "b_msis_squared": "5059645813140880829884805772860260230264"
+  },
+  "recon": {
+    "algorithm": "xlatsec-recon-v1",
+    "lll_delta_num": 99,
+    "lll_delta_den": 100,
+    "passes": 2,
+    "window": 2
+  },
+  "xof": "shake256-framed-v1",
+  "codec_version": 3,
+  "evidence": {
+    "claim": "No security claim. Functional test profile.",
+    "matrix_constants": null,
+    "recon_statistics": null,
+    "estimates": [],
+    "notes": [
+      "Exercises d = 512 challenge sampling, the 66-bit modulus 2^66 - 16383, masks of width 2^56 and a signature bound above 2^64 (66-bit response coefficients), with only 20 parties."
+    ]
+  },
+  "digest": "b6770b3da0da3142c99e403699ba931e91f7efdd8fd163bd8408d9b441e4072f40e5dafa23314360b3effb792d3a2b498d199328abe36bcfc7d075513367f496"
+}

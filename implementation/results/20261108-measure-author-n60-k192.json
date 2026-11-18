@@ -1,0 +1,70 @@
+{
+  "aborted": 0,
+  "bytes": {
+    "ak_i": 33796,
+    "commitment": 48,
+    "msg": {
+      "max": 180.0,
+      "mean": 178.92
+    },
+    "opening": 33794,
+    "sig": {
+      "max": 55174.0,
+      "mean": 53542.49
+    },
+    "sk_i": {
+      "max": 20175.0,
+      "mean": 20131.117
+    },
+    "vk": 33890,
+    "z_i": {
+      "max": 51014.0,
+      "mean": 50971.025
+    }
+  },
+  "codec_version": 3,
+  "lambda": {
+    "l1": {
+      "max": 86.0,
+      "mean": 26.76
+    },
+    "l2": {
+      "max": 16.852,
+      "mean": 5.745
+    },
+    "linf": {
+      "max": 6.0,
+      "mean": 1.93
+    },
+    "weight": {
+      "max": 37.0,
+      "mean": 22.92
+    }
+  },
+  "ms": {
+    "combine": 117.5115,
+    "keygen": 322.598,
+    "partial_verify_per_call": 4.1102,
+    "recon": 0.9049,
+    "round1_per_signer": 8.3012,
+    "round2_per_signer": 0.0086,
+    "round3_per_signer": 12.5846,
+    "verify": 2.7518
+  },
+  "norm_over_b2": {
+    "max": 0.034597,
+    "mean": 0.01171
+  },
+  "not_authorized": 0,
+  "partial_norm_over_b1": {
+    "max": 0.84927,
+    "mean": 0.826002
+  },
+  "profile": "author-n60-k192-nov2026",
+  "profile_digest": "ec6d883b51bef4cfe9b68d0ed0849b109aba0a9b05dd61836b359b013cfaf6824f373c3a89950ec69e827efc35d3d8c37fca376737bb62368143b62ac09afd0f",
+  "rejected_by_bounds": 0,
+  "seed": "20261106",
+  "set_size": 46,
+  "sets_drawn": 100,
+  "signed": 100
+}

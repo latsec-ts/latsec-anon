@@ -1,0 +1,228 @@
+{
+  "aborted": 0,
+  "bytes": {
+    "ak_i": 32260,
+    "commitment": 48,
+    "msg": {
+      "max": 141.0,
+      "mean": 140.7
+    },
+    "opening": 32258,
+    "sig": {
+      "max": 51926.0,
+      "mean": 51641.2
+    },
+    "sk_i": {
+      "max": 19581.0,
+      "mean": 19476.2
+    },
+    "vk": 32354,
+    "z_i": {
+      "max": 50171.0,
+      "mean": 50130.405
+    }
+  },
+  "codec_version": 3,
+  "environment": {
+    "cargo_profile": "release",
+    "cpu_model": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+    "cpufreq_cpu": 2,
+    "cpufreq_driver": "amd-pstate-epp",
+    "cpufreq_governor": "powersave",
+    "cpuinfo_max_khz": 5157895,
+    "cpus_allowed": "2",
+    "debug_assertions": false,
+    "energy_performance_preference": "balance_performance",
+    "kernel": "7.2.15+deb14-amd64",
+    "opt_level": "3",
+    "rustc": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+    "rustflags": "",
+    "target": "x86_64-unknown-linux-gnu",
+    "target_features": "fxsr,sse,sse2",
+    "threads": 1
+  },
+  "keygen_runs": 11,
+  "lambda": {
+    "l1": {
+      "max": 10.0,
+      "mean": 7.067
+    },
+    "l2": {
+      "max": 3.162,
+      "mean": 2.649
+    },
+    "linf": {
+      "max": 1.0,
+      "mean": 1.0
+    },
+    "weight": {
+      "max": 10.0,
+      "mean": 7.067
+    }
+  },
+  "method": "one thread; monotonic clock around each library call; warm-up sessions not recorded; round times are the session total divided by the number of signers; rounds exchange values in memory, codecs are timed separately; quantiles over sessions (over calls for partial verify, the predicate and the codecs)",
+  "ms": {
+    "combine": 36.1779,
+    "keygen": 81.578,
+    "partial_verify_per_call": 1.4279,
+    "recon": 0.3767,
+    "round1_per_signer": 4.3333,
+    "round2_per_signer": 0.0055,
+    "round3_per_signer": 3.8653,
+    "verify": 1.197
+  },
+  "norm_over_b2": {
+    "max": 0.021023,
+    "mean": 0.017501
+  },
+  "not_authorized": 0,
+  "partial_norm_over_b1": {
+    "max": 0.846387,
+    "mean": 0.826221
+  },
+  "profile": "author-n40-k192-nov2026",
+  "profile_digest": "526ef63ee510567eaf8168114f3e8c7c06ccdea1e7d54518f7983a86a9e68d95339b4351349844fee621ba6f5363ed15982ae27e136f3bf95bd9cf1349cddded",
+  "rejected_by_bounds": 0,
+  "seed": "20261116-n40-k192-act33",
+  "set_size": 33,
+  "sets_drawn": 30,
+  "signed": 30,
+  "timing_ms": {
+    "combine": {
+      "max": 38.7576,
+      "mean": 36.1779,
+      "median": 36.0445,
+      "min": 34.603,
+      "p25": 35.513,
+      "p75": 36.4733,
+      "samples": 30
+    },
+    "decode_opening": {
+      "max": 0.0911,
+      "mean": 0.0507,
+      "median": 0.0494,
+      "min": 0.0493,
+      "p25": 0.0494,
+      "p75": 0.0495,
+      "samples": 990
+    },
+    "decode_partial_response": {
+      "max": 0.2342,
+      "mean": 0.1511,
+      "median": 0.1496,
+      "min": 0.1476,
+      "p25": 0.1492,
+      "p75": 0.1503,
+      "samples": 990
+    },
+    "decode_signature": {
+      "max": 0.2219,
+      "mean": 0.2104,
+      "median": 0.2117,
+      "min": 0.1871,
+      "p25": 0.2085,
+      "p75": 0.2138,
+      "samples": 30
+    },
+    "encode_opening": {
+      "max": 0.1026,
+      "mean": 0.0531,
+      "median": 0.0513,
+      "min": 0.051,
+      "p25": 0.0512,
+      "p75": 0.0515,
+      "samples": 990
+    },
+    "encode_partial_response": {
+      "max": 0.2353,
+      "mean": 0.1492,
+      "median": 0.1477,
+      "min": 0.1454,
+      "p25": 0.1471,
+      "p75": 0.1486,
+      "samples": 990
+    },
+    "encode_signature": {
+      "max": 0.7661,
+      "mean": 0.6576,
+      "median": 0.6551,
+      "min": 0.6407,
+      "p25": 0.6515,
+      "p75": 0.6569,
+      "samples": 30
+    },
+    "keygen": {
+      "max": 83.1222,
+      "mean": 81.5778,
+      "median": 81.4211,
+      "min": 80.4744,
+      "p25": 80.9697,
+      "p75": 82.0077,
+      "samples": 11
+    },
+    "partial_verify_per_call": {
+      "max": 1.8585,
+      "mean": 1.4279,
+      "median": 1.4244,
+      "min": 1.3427,
+      "p25": 1.3827,
+      "p75": 1.4526,
+      "samples": 990
+    },
+    "predicate_per_call": {
+      "max": 0.0022,
+      "mean": 0.0013,
+      "median": 0.0012,
+      "min": 0.0009,
+      "p25": 0.0011,
+      "p75": 0.0014,
+      "samples": 30
+    },
+    "recon": {
+      "max": 0.466,
+      "mean": 0.3767,
+      "median": 0.3785,
+      "min": 0.3346,
+      "p25": 0.3616,
+      "p75": 0.3884,
+      "samples": 30
+    },
+    "round1_per_signer": {
+      "max": 4.7282,
+      "mean": 4.3333,
+      "median": 4.3061,
+      "min": 4.254,
+      "p25": 4.2866,
+      "p75": 4.3514,
+      "samples": 30
+    },
+    "round2_per_signer": {
+      "max": 0.0094,
+      "mean": 0.0055,
+      "median": 0.0054,
+      "min": 0.0046,
+      "p25": 0.0053,
+      "p75": 0.0056,
+      "samples": 30
+    },
+    "round3_per_signer": {
+      "max": 5.0621,
+      "mean": 3.8653,
+      "median": 3.8195,
+      "min": 3.7428,
+      "p25": 3.7566,
+      "p75": 3.8502,
+      "samples": 30
+    },
+    "verify": {
+      "max": 1.3515,
+      "mean": 1.197,
+      "median": 1.1958,
+      "min": 1.143,
+      "p25": 1.1704,
+      "p75": 1.2095,
+      "samples": 30
+    }
+  },
+  "warmup_sessions": 5
+}
